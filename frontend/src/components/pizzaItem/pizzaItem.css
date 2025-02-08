@@ -1,0 +1,118 @@
+.pizza-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pizza-item:hover {
+    transform: translateY(-8px); /* Moves the card slightly up */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Increases shadow depth */
+}
+
+.pizza-item-img-container {
+    width: 100%;
+    height: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pizza-item-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.pizza-item-info {
+    padding: 10px;
+    height: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.star-icon {
+    color: gold;
+    margin-right: 2px;
+}
+
+
+
+.pizza-item-desc:hover {
+    color: #222; 
+    opacity: 1; 
+}
+.cart-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .cart-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-btn:hover {
+    background-color: #e55d00;
+  }
+  
+  .pizza-item-price {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 50px;
+    margin-bottom: 10px; 
+}
+
+.add-to-cart-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #cc5500;
+}
+
+.pizza-item-desc {
+    font-size: 14px; 
+    color: #444; 
+    line-height: 1.5; 
+    margin-top: 8px; 
+    text-align: left; 
+    font-style: italic; 
+    letter-spacing: 0.5px; 
+    word-spacing: 1px; 
+    opacity: 0.9; 
+    transition: color 0.3s ease-in-out; 
+}
+
+  
