@@ -1,0 +1,36 @@
+.placed-order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+.placed-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.placed-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.placed-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    outline-color: tomato;
+}
+.placed-order-left .multi-fields{
+    display: flex;
+    gap: 15px;
+}
+.placed-order-right{
+   
+    width: 100%;
+    max-width: max(40%,500px);
+}
+.placed-order-right .cart-total button{
+    margin-top: 30px;
+}

@@ -1,0 +1,116 @@
+.footer {
+    width: 100%;
+    background-color: #2A3838; /* Dark Gray */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 8vw;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    gap: 20px; /* Space between sections */
+}
+
+/* Footer Logo */
+.footer-logo img {
+    width: 120px;
+    max-width: 100%;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+/* Social Media Icons */
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.footer-social .social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Horizontal Line */
+.footer hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 5vw; /* Reduce padding on smaller screens */
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-links ul {
+        font-size: 14px;
+    }
+
+    .footer-social .social-icons a img {
+        width: 25px;
+    }
+}

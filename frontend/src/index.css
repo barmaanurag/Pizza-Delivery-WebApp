@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Outfit;
+  scroll-behavior: smooth;
 }
 body{
   min-height: 100vh;
@@ -14,10 +15,12 @@ a{
   color: inherit;
 }
 .app{
-  width: 80%;
+  width: 100%;
   margin: auto;
   
 }
+
+
 @keyframes fadeIn {
   0%{
     opacity: 0;

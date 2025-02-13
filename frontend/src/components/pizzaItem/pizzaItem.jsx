@@ -5,7 +5,7 @@ import { faStar, faStarHalfAlt, faPlus, faMinus } from '@fortawesome/free-solid-
 import { StoreContext } from '../../context/StoreContext';
 
 const PizzaItem = ({ id, name, prize, image, description, rating }) => {
-  const { cart, addToCart, removeFromCart } = useContext(StoreContext);
+  const { cart, addToCart, removeFromCart, url } = useContext(StoreContext);
 
   const renderStars = (rating) => {
     const stars = [];
@@ -25,7 +25,7 @@ const PizzaItem = ({ id, name, prize, image, description, rating }) => {
   return (
     <div className='pizza-item'>
       <div className="pizza-item-img-container">
-        <img src={image} alt="" className="pizza-item-image" />
+        <img src={url+"/images/"+image} alt="" className="pizza-item-image" />
       </div>
       <div className="pizza-item-info">
         <div className="pizza-item-name-rating">

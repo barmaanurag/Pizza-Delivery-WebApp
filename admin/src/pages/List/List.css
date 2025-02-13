@@ -1,0 +1,58 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 columns */
+    align-items: center;
+    gap: 5px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-table-format.title {
+    background-color: #cacaca;
+    font-weight: bold;
+}
+
+.list-table-format img {
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+}
+.remove{
+    cursor: pointer;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) { /* For tablets */
+    .list-table-format {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Reduce to 4 columns */
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) { /* For smaller tablets & large phones */
+    .list-table-format {
+        grid-template-columns: 1fr 1fr; /* Reduce to 2 columns */
+        font-size: 11px;
+    }
+
+    .list-table-format.title {
+        display: none; /* Hide title row on smaller screens */
+    }
+
+    .list-table-format img {
+        width: 40px; /* Adjust image size */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+    .list-table-format {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .list-table-format img {
+        width: 35px; /* Further reduce image size */
+    }
+}

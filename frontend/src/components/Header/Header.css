@@ -1,7 +1,8 @@
 .header {
     height: 34vw;
+    width: 80%;
     margin: 30px auto;
-    background: url('/assets/header-image.jpg') no-repeat center center;
+    background:  no-repeat center center;
     background-size: cover;
     position: relative;
     display: flex;
@@ -10,6 +11,8 @@
     flex-direction: column;
     text-align: center;
     padding: 20px 0px;
+    border: none;
+    border-radius: 10px;
 }
 
 .header-contents{
@@ -47,4 +50,22 @@
 .header-contents button:hover{
     background-color: #747474;
     color: #fff;
+}
+@media (max-width: 1050px) {
+    
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width: 750px) {
+    
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
 }

@@ -1,16 +1,6 @@
 import basket_icon from './basket_icon.png';
 import logo from './Your_Pizza.gif';
 import search_icon from './search_icon.png';
-// import p1 from './p1.jpg';
-// import p2 from './p2.jpg';
-// import p3 from './p3.jpg';
-// import p4 from './p4.jpg';
-// import p5 from './p5.jpg';
-// import p6 from './p6.jpg';
-// import p7 from './p7.jpg';
-// import p8 from './p8.jpg';
-// import p9 from './p9.jpg';
-// import p10 from './p10.jpg';
 import parcel_icon from './parcel_icon.png';
 import play_store from './play_store.png';
 import profile_icon from './profile_icon.png';
@@ -60,6 +50,7 @@ import menu2 from './Special_Pizza.jpg';
 import menu3 from './Pizza_Mania.jpg';
 import menu4 from './Non-Veg_Pizzas.jpg';
 import menu5 from './Cheese_Burst_Pizza.jpg';
+import footerlogo from './Your_Pizza_Logo.jpg'
 export const assets = {
     basket_icon,
     logo,
@@ -112,7 +103,8 @@ export const assets = {
     cb2,
     cb3,
     cb4,
-    cb5
+    cb5,
+    footerlogo
 };
 
 export const menu_list = [
