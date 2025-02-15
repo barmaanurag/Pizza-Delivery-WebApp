@@ -17,7 +17,6 @@ const Login = ({ setShowLogin }) => {
     const { name, value } = event.target;
     setData(prevData => ({ ...prevData, [name]: value }));
   };
-
   const onSubmitHandler = async (event) => {
     event.preventDefault();
     let newUrl = url;
